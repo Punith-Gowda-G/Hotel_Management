@@ -1,0 +1,123 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<section class="rooms-page">
+
+    <h1 class="room-title">Our Luxury Rooms</h1>
+
+    <p class="room-subtitle">
+        Experience elegance, comfort, and world-class hospitality.
+    </p>
+
+    <div class="cards">
+
+        <!-- Deluxe Room -->
+
+        <div class="card">
+
+            <img src="{{ url_for('static', filename='images/deluxe.jpg') }}">
+
+            <div class="card-body">
+
+                <h2>Deluxe Room</h2>
+
+                <p>
+                    Spacious room with king-size bed,
+                    balcony view, free breakfast,
+                    WiFi and air conditioning.
+                </p>
+
+                <div class="price">
+                    ₹2,999 / Night
+                </div>
+
+                <ul class="features">
+
+                    <li>🛏 King Size Bed</li>
+                    <li>📶 Free WiFi</li>
+                    <li>🍽 Breakfast Included</li>
+                    <li>❄ Air Conditioner</li>
+
+                </ul>
+
+                <a href="/booking" class="book-btn">Book Now</a>
+
+            </div>
+
+        </div>
+
+        <!-- Royal Suite -->
+
+        <div class="card">
+
+            <img src="{{ url_for('static', filename='images/suite.jpg') }}">
+
+            <div class="card-body">
+
+                <h2>Royal Suite</h2>
+
+                <p>
+                    Premium luxury suite with
+                    living area, city view,
+                    smart TV and premium services.
+                </p>
+
+                <div class="price">
+                    ₹5,999 / Night
+                </div>
+
+                <ul class="features">
+
+                    <li>👑 Royal Interior</li>
+                    <li>🛋 Living Area</li>
+                    <li>📺 Smart TV</li>
+                    <li>☕ Coffee Machine</li>
+
+                </ul>
+
+                <a href="/booking" class="book-btn">Book Now</a>
+
+            </div>
+
+        </div>
+
+        <!-- Family Room -->
+
+        <div class="card">
+
+            <img src="{{ url_for('static', filename='images/family.jpg') }}">
+
+            <div class="card-body">
+
+                <h2>Family Room</h2>
+
+                <p>
+                    Perfect for families with
+                    spacious beds, play area,
+                    mountain view and sofa lounge.
+                </p>
+
+                <div class="price">
+                    ₹4,499 / Night
+                </div>
+
+                <ul class="features">
+
+                    <li>👨‍👩‍👧‍👦 Family Friendly</li>
+                    <li>🎮 Kids Area</li>
+                    <li>🌄 Balcony View</li>
+                    <li>🛋 Sofa Lounge</li>
+
+                </ul>
+
+                <a href="/booking" class="book-btn">Book Now</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
