@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="hero" id="home">
+
+<div class="overlay">
+
+<p class="hero-kicker">Luxury Hotel & Resort</p>
+
+<h1>Paradise Palace</h1>
+
+<p class="hero-copy">Experience a stay designed around calm interiors, curated comfort, and seamless service.</p>
+
+<div class="hero-actions">
+
+<a href="/booking" class="hero-btn primary-btn">Book Your Stay</a>
+
+<a href="/rooms" class="hero-btn secondary-btn">View Rooms</a>
+
+</div>
+
+<div class="hero-badges">
+
+<span>Ocean-view suites</span>
+<span>Airport pickup</span>
+<span>24-hour concierge</span>
+
+</div>
+
+</div>
+
+</div>
+
+<section class="feature-strip page-section">
+
+<div class="feature-card">
+<h3>120+ Rooms</h3>
+<p>Elegant room types for business travel, family breaks, and premium getaways.</p>
+</div>
+
+<div class="feature-card">
+<h3>Fine Dining</h3>
+<p>A chef-led menu with local favorites, breakfast service, and private dining.</p>
+</div>
+
+<div class="feature-card">
+<h3>Spa & Wellness</h3>
+<p>Relax with pool access, spa treatments, and a quiet evening terrace.</p>
+</div>
+
+</section>
+
+<section class="rooms-page">
+
+<h1 class="room-title">Luxury Rooms</h1>
+
+<p class="room-subtitle">Three signature stays designed for comfort, privacy, and a premium hotel feel.</p>
+
+<div class="cards">
+
+<div class="card">
+<img src="{{ url_for('static', filename='images/deluxe.jpg') }}" alt="Deluxe Room">
+<div class="card-body">
+<h2>Deluxe Room</h2>
+<p>Elegant interiors with king-size bed, work desk, and balcony view.</p>
+<div class="room-meta">32 m² • City View • 2 Guests</div>
+<div class="price">₹2999 / Night</div>
+<a href="/booking" class="book-btn">Reserve</a>
+</div>
+</div>
+
+<div class="card">
+<img src="{{ url_for('static', filename='images/suite.jpg') }}" alt="Royal Suite">
+<div class="card-body">
+<h2>Royal Suite</h2>
+<p>Luxury suite with private lounge, breakfast, and late checkout.</p>
+<div class="room-meta">54 m² • Lounge Access • 3 Guests</div>
+<div class="price">₹4999 / Night</div>
+<a href="/booking" class="book-btn">Reserve</a>
+</div>
+</div>
+
+<div class="card">
+<img src="{{ url_for('static', filename='images/family.jpg') }}" alt="Family Room">
+<div class="card-body">
+<h2>Family Room</h2>
+<p>Perfect choice for family vacations with extra bedding and two seating zones.</p>
+<div class="room-meta">45 m² • Two Beds • 4 Guests</div>
+<div class="price">₹3999 / Night</div>
+<a href="/booking" class="book-btn">Reserve</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+{% endblock %}

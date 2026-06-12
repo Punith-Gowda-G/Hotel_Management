@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paradise Palace</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<nav class="top-nav">
+
+<a class="logo" href="/">
+Paradise Palace
+</a>
+
+<div class="nav-meta">
+    Boutique Hotel • Open 24/7
+</div>
+
+<ul>
+
+<li><a href="/">Home</a></li>
+
+<li><a href="/rooms">Rooms</a></li>
+
+<li><a href="/booking">Book Now</a></li>
+
+<li><a href="/bookings">Insights</a></li>
+
+<li><a href="/gallery">Gallery</a></li>
+
+<li><a href="/contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+{% block content %}
+
+{% endblock %}
+
+<footer class="site-footer">
+
+<div>
+    <h2>Paradise Palace</h2>
+    <p>Luxury stays, thoughtful service, and a calm coastal mood.</p>
+</div>
+
+<div class="footer-note">
+    <p>Reservations: +91 98765 43210</p>
+    <p>Front Desk: concierge@paradisepalace.com</p>
+</div>
+
+<p class="copyright">© 2026 All Rights Reserved</p>
+
+</footer>
+
+</body>
+
+</html>

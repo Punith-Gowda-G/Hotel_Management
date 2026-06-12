@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="booking-page confirmation-page">
+
+    <div class="booking-form-shell confirmation-shell">
+
+        <div class="confirmation-badge">Reservation Confirmed</div>
+
+        <h1 class="booking-form-title">Thank you, {{ booking.name }}</h1>
+
+        <p class="booking-form-subtitle">
+            Your stay has been saved and your confirmation is ready for check-in.
+        </p>
+
+        <div class="confirmation-grid">
+
+            <div class="confirmation-card">
+                <span>Reference</span>
+                <strong>#{{ booking.reference }}</strong>
+            </div>
+
+            <div class="confirmation-card">
+                <span>Room</span>
+                <strong>{{ booking.room }}</strong>
+            </div>
+
+            <div class="confirmation-card">
+                <span>Stay Length</span>
+                <strong>{{ booking.days }} Nights</strong>
+            </div>
+
+            <div class="confirmation-card">
+                <span>Check In</span>
+                <strong>{{ booking.check_in }}</strong>
+            </div>
+
+            <div class="confirmation-card">
+                <span>Check Out</span>
+                <strong>{{ booking.check_out }}</strong>
+            </div>
+
+            <div class="confirmation-card">
+                <span>Phone</span>
+                <strong>{{ booking.phone }}</strong>
+            </div>
+
+        </div>
+
+        <div class="confirmation-note">
+            A digital copy is now stored in the local database. Front desk can verify this reservation using the reference number above.
+        </div>
+
+        <div class="hero-actions confirmation-actions">
+            <a href="/bookings" class="hero-btn primary-btn">View Dashboard</a>
+            <a href="/booking" class="hero-btn secondary-btn">Book Another Stay</a>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
