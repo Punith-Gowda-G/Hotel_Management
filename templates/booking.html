@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="booking-page">
+
+    <div class="booking-form-shell">
+
+        <h1 class="booking-form-title">Book a Stay</h1>
+
+        <p class="booking-form-subtitle">
+            Save a reservation to the local database and see it on the results page.
+        </p>
+
+        <form method="post" class="booking-form">
+
+            <div class="form-grid">
+
+                <div class="form-field">
+                    <label for="name">Guest Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter guest name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="room">Room Type</label>
+                    <select id="room" name="room" required>
+                        <option value="">Select room type</option>
+                        <option value="Deluxe Room">Deluxe Room</option>
+                        <option value="Royal Suite">Royal Suite</option>
+                        <option value="Family Room">Family Room</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="days">Stay Duration</label>
+                    <input type="number" id="days" name="days" min="1" placeholder="Number of days" required>
+                </div>
+
+            </div>
+
+            <button type="submit" class="submit-btn">Save Reservation</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}
