@@ -1,1 +1,0 @@
-console.log("Hotel Management Loaded");
